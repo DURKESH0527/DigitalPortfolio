@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+   #title
+    {
+        width: 100%;
+        overflow: hidden;
+        display: table
+    }
+    ul
+    {
+        list-style-type: none;
+        text-align:right;
+    }
+    li
+    {
+        display:inline-block;
+        font-size: 25px;
+        padding:  35px 60px 0px 50px;
+        font-family:"Poppins", sans-serif;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+        
+    }
+    a:hover
+    {
+        background-color:black;
+        color:gold;
+    } 
+    .logo
+     img{
+               float:left;
+               height: 100px;
+               top: 100px;
+               width: 100px;
+               border-radius: 50px;
+    }
+    i
+    {
+        color:black;
+    }
+                                
+</style>
+
+<style>  
+
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    color:red;
+  }
+  
+  .row {
+    margin: 1px 20px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 5px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30%;
+    margin: 15px;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+ 
+  .content
+  {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.image 
+{
+  display:block;
+  width:100%;
+  height:100%;
+  padding: auto;
+}
+.overlay 
+{
+  position:absolute; 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:lime;
+  font-size: 25px;
+  padding: 150px 10px 5px 5px;
+  text-align:left;
+}
+.content:hover 
+.overlay 
+{
+  opacity:1;
+}    
+                           
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  
+  .btn {
+    border:#f1f1f1;
+    outline-width: 20px;
+    padding: 20px 20px 20px 20px;
+    font-family: sans-serif;
+    background-color:blue;
+    color:white;
+    
+  }
+  
+  .btn:hover {
+    background-color:red;
+    color:white;
+  }
+  
+  .btn.active {
+    background-color:black;
+    color: white;
+    font-family:"poppins";
+  }
+
+#log
+  {
+    width: 100%;
+    display:table;
+     background-color:whitesmoke;
+     padding: 50px 20px 20px 50px;
+     text-align:left;
+     color:black;
+     font-family:sans-serif;
+
+  }
+  .centered
+  {
+    width:50%;
+    float:right;
+    text-align:right;
+  }
+  .centered 
+  {
+    width: 50%;
+    float:left;
+    text-align: left;
+  }
+  .centered 
+    h2{
+        color:red;
+        font-size:40px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+</style>
+
+<style>
+  .col-container {
+    display:100%;
+
+    left: 0;
+   bottom: 0;
+   margin: 0;
+   width: 100%;
+   background-color:blueviolet;
+   text-align:justify;
+   color:mediumblue;
+    width: 100%;
+  }
+  i
+  {
+    color:darkblue;
+   
+  }
+  .col 
+  {
+    display: table-cell;
+    color:whitesmoke;
+  padding: 0px 110px 0px 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+  }
+  h3
+  {
+    color:black;
+    font-family:"poppins";
+    font-size:15px;
+  }
+  
+  </style>
+                                <!-- FOOTER   BOX-->
+  <style>
+  .footer {
+   
+   left: 0;
+   bottom: 0;
+   margin: 0;
+   width: 100%;
+   background-color:blueviolet;
+   color: white;
+   text-align: center;
+}
+  </style>
+                  
+            
+   
+</head>
+<body>
+
+  <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+
+  <div id="title">
+  <div class="logo">
+  <img src="D:\Microsoft VS Code\assets\images\1.PNG" alt="Avatar">
+  <div>
+  <ul>
+      <li><a href="PROJECT.html" > <b> &nbsp;    HOME    </b>   </a></li>
+      <li><a  href="secondpage.html"> <b>  &nbsp;   WORKS  </b></a></li> 
+      <li><a href="">  <b>  &nbsp;    SERVICES   </b></a></li>
+      <li><a  href="#"> <b> &nbsp;     ABOUT </b></a></li>
+      <li><a  href="CONTACTUS.HTML"> <b> &nbsp;    CONTACT</b> </a></li> 
+   </ul>
+  </div>
+  </div>  
+</div>
+
+<hr>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>OUR WORKS</h1>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+  <button class="btn" onclick="filterSelection('nature')"> WEBSITE</button>
+  <button class="btn" onclick="filterSelection('cars')"> BRANDING</button>
+  <button class="btn" onclick="filterSelection('people')"> E-COMMERCE</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  
+  <div class="column cars">
+    <a href='image1.html' class="image">
+    <div class="content">
+      <div class="overlay"> <hr> Babys Nest</div>
+       
+      <img src="D:\Microsoft VS Code\assets\images\b1.jpg" style="width:100%" class="image">
+    </div>
+  </a>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr>  Udhayya baby product </div>
+    <img src="D:\Microsoft VS Code\assets\images\b2.jpg" style="width:100%" class="image">
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> Modern Mart </div>
+      <img src="D:\Microsoft VS Code\assets\images\b3.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> Vayal Foods</div>
+      <img src="D:\Microsoft VS Code\assets\images\b4.jpg"  style="width:100%" class="image">
+      </div>
+  </div>
+ 
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> Elixir Logo </div>
+      <img src="D:\Microsoft VS Code\assets\images\b5.jpg" style="width:100%" class="image">
+    </div>
+  </div>
+ 
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr>Adya Charitable Foundation </div>
+      <img src="D:\Microsoft VS Code\assets\images\b6.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+ 
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> ACDC </div>
+      <img src="D:\Microsoft VS Code\assets\images\b7.jpg"  style="width:100%" class="image">
+     </div>
+  </div>
+ 
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> Vijaai Optical </div>
+      <img src="D:\Microsoft VS Code\assets\images\b8.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+ 
+  <div class="column cars">
+    <div class="content">
+      <div class="overlay"> <hr> Global Institution </div>
+      <img src="D:\Microsoft VS Code\assets\images\b9.jpg"  style="width:100%" class="image">
+  </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay">  <hr>Podaran Foods </div>
+      <img src="D:\Microsoft VS Code\assets\images\w1.JPG"  style="width: 100%" class="image">
+      </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> RK Engineering </div>
+      <img src="D:\Microsoft VS Code\assets\images\w2.JPG"  style="width: 100%" class="image">
+    </div>
+  </div>
+  
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> Nandha Engineering College </div>
+      <img src="D:\Microsoft VS Code\assets\images\w3.JPG"  style="width: 100%" class="image">
+      </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+    <div class="overlay"> <hr> Crownbuilders </div>
+    <img src="D:\Microsoft VS Code\assets\images\w4.JPG" style="width: 100%" class="image">
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> Amezol </div>
+      <img src="D:\Microsoft VS Code\assets\images\w5.JPG"  style="width: 100%" class="image">
+     </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> SDS Builders </div>
+      <img src="D:\Microsoft VS Code\assets\images\w6.JPG"  style="width: 100%" class="image">
+     
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> Shri Devi Chit Funds </div>
+      <img src="D:\Microsoft VS Code\assets\images\w7.JPG"  style="width: 100%" class="image">
+     </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> Yuvia Cotton Website </div>
+      <img src="D:\Microsoft VS Code\assets\images\w8.JPG"  style="width: 100%" class="image">
+      </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> R Cubes </div>
+      <img src="D:\Microsoft VS Code\assets\images\w9.JPG" style="width: 100%" class="image">
+    </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> San V </div>
+      <img src="D:\Microsoft VS Code\assets\images\w10.JPG"  style="width: 100%" class="image">
+     </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> SR Oil Mill </div>
+      <img src="D:\Microsoft VS Code\assets\images\w11.JPG"  style="width: 100%" class="image">
+     </div>
+  </div>
+
+  <div class="column nature">
+    <div class="content">
+      <div class="overlay"> <hr> Annai Infra Developers Pvt Ltd </div>
+      <img src="D:\Microsoft VS Code\assets\images\w12.JPG"  style="width:100%" class="image">
+    </div>
+  </div>
+  
+
+  <div class="column people">
+    <div class="content">
+      <div class="overlay"> <hr> The Cake Shop </div>
+      <img src="D:\Microsoft VS Code\assets\images\e1.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+  
+  <div class="column people">
+    <div class="content">
+      <div class="overlay"> <hr> MyDreams Slips  </div>
+    <img src="D:\Microsoft VS Code\assets\images\e2.jpg" style="width:100%" class="image">
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <div class="overlay"> <hr> Nano Healthcare </div>
+    <img src="D:\Microsoft VS Code\assets\images\e3.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <div class="overlay"> <hr> You And Me Cakes </div>
+    <img src="D:\Microsoft VS Code\assets\images\e4.jpg"  style="width:100%" class="image">
+    </div>
+  </div>
+</div>
+
+  <br> <br> <br> <br>
+
+  <div id="log">
+      <div class="centered">
+        <p> <b> We craft digital experiences that excite & inspire </b></p>
+             <b> <h2>    Let's Start Project</h2></b>
+        </div>
+    
+    <div class="centered">
+        <form>
+         <b> <label for="fname">Name :</label><br><br></b>
+         <input type="text" name="fname" id="fname" value="" minlength="8" required  style="border-color:black; border-radius: 3px; width:75%;"><br><br>
+          <b><label for="phone">Mobile no : </label><br><br></b>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{10}" placeholder="" value="+91 &nbsp;" style="border-color:black; border-radius: 3px; width:75%;"><br><br>
+          <b> <label for="emailid">Emial Id : </label><br><br></b>
+          <input type="text" name="emailid" id="emailid" value="" style="border-color:black; border-radius: 3px; width:75%;"><br><br> 
+          <input type="submit" value="SEND &rarr;" style="text-align:justify; background-color: black; color: white;">
+        </form>
+    </div>
+</div>
+
+
+<div class="col-container">
+  <div class="col" style="background:blueviolet">
+    <img src="D:\Microsoft VS Code\assets\images\dp.PNG" style="max-height:100px; max-width:100px;">
+    <h3>DURKESH'S & PRAKASH'S </h3>
+    <h3>TECHNOLOGIES</h3>
+    ​   <i  class="fa fa-linkedin-square fa-lg">&nbsp;</i>
+    ​   <i class="fa fa-github-square fa-lg">&nbsp;</i>
+        <i class="fa fa-whatsapp">&nbsp;</i>
+         <i class="fa fa-google-plus-square fa-lg">&nbsp;</i>
+        <i class="fa fa-twitter-square fa-lg">&nbsp;</i>
+     <i class="fa fa-facebook-square fa-lg">&nbsp;</i>
+       <i class="fa fa-instagram-sqare fa-lg">&nbsp;</i>
+       <i class="fa fa-youtube-play fa-lg">&nbsp;</i>
+</div>
+
+  <div class="col" style="background:blueviolet">
+   
+   <b> <p>About</p>
+    <p>Services</p>
+    <p><a href="ABOUTPAGE.html">Portfolio</a></p>
+    <p><a href="CONTACTUS.HTML">Contact</a></p>
+      <p>Career</p>
+        <p>Blog</p></b>
+  </div>
+
+  <div class="col" style="background:blueviolet">
+    <b><p>Brand Design</p>
+    <p>Website Design</p>
+    <p>Digital Marketing</p>
+    <p>Application Development</p></b>
+  </div>
+  
+  <div class="col" style="background:blueviolet">
+   
+  <b><p>Logo Design</p>
+          <p> Identity Design</p>
+          <p>UX Strategy Desig</p>
+          <p>Website Designing</p>
+          <p> Creative Design</p>
+          <p>E-commerce</p></b> 
+  </div>
+    <div class="col" style="background:blueviolet">
+   
+    <b>	 <p>Search Engine Optimization</p>
+    <p>Social Media Marketing</p>
+    <p>PPC Ad Campaign</p>
+    <p>Enterprise Application</p>
+    <p>Mobile Application</p></b>
+  </div>  
+  </div>
+    
+
+  <div class="footer">
+    <b><p>Copyrights &#169; DURKESH'S TECHNOLOGIES | Terms And Condition | Privacy Policy
+</footer>
+</div>
+</div>
+ 
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+</body>
+</html>

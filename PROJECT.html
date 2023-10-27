@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PROJECT</title>
+<style type="text/css">
+    *
+      {
+        margin: 1px;
+        box-sizing:border-box;
+        border-color: black;
+      }
+    #title
+    {
+        width: 100%;
+        overflow: hidden;
+        display: table
+    }
+    ul
+    {
+        list-style-type: none;
+        text-align:right;
+    }
+    li
+    {
+        display:inline-block;
+        font-size: 25px;
+        padding:  35px 60px 0px 50px;
+        font-family:"Poppins", sans-serif;
+    }
+    a{
+        color:black;
+        text-decoration: none;
+        
+    }
+    a:hover
+    {
+        background-color:black;
+        color:gold;
+    } 
+    .logo
+     img{
+               float:left;
+               height: 100px;
+               top: 100px;
+               width: 100px;
+               border-radius: 50px;
+    }
+    i
+    {
+        color:black;
+    }
+                                
+    #about
+    {
+        padding: 20px;
+        width: 100%;
+        background-color: #f1f1f1;
+        display:grid;
+    }
+    .con
+    {
+        padding: 5px;
+        background-color: #f1f1f1;
+        font-family: Arial;
+    }
+    .con
+    h1
+    {
+       text-align: center;
+        color:blue;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family:italic;
+    }
+    .con>p
+    {
+         top:50px;
+        font-size: 20px;
+        line-height: 50%;
+        text-align: justify;
+    }
+    i{
+        color: red;
+        border-color: black;
+    }
+  
+</style>
+
+<style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+        padding: 10px;
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 2px 2px 0;
+      user-select:none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color:#f1f1f1;
+      color: red;
+    }
+    
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+           
+<style>
+    .col-container {
+      display: table;
+      width: 100%;
+    }
+    i
+    {
+      color:cornflowerblue;
+     
+    }
+    .col 
+    {
+      display: table-cell;
+      color:red;
+      padding: 0px 40px 40px 40px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 20px;
+    }
+    .col:hover
+    {
+    background-color:gold;
+    }
+    h3
+    {
+      color:black;
+      font-family:"Arial Narrow Bold";
+    }
+
+  </style>
+                                     <!-- COMPANY DETAILS-->
+
+<style>
+ #paragraph
+{
+    width: 110%;
+    display:table;
+    background-color:white;
+    padding-left: 80px;
+                                                          
+}
+.para
+{
+     width: 45%;
+     float:right;
+}
+.para
+{
+    width: 45%;
+    padding-right: 100px;
+    float:left;
+    font-family: "poppins";
+}  
+.para
+h4
+{
+  font-size: 25px;
+  color:yellow;
+  font-family: "poppins";
+}
+p
+{
+   font-size:20px;
+   color:black;
+   font-family:"poppins";
+  }
+  h6
+  {
+    font-size: 15px;
+    color:lime;
+    font-family:sans-serif;
+  }
+</style>                              
+                                          <!-- FOOTER   BOX-->
+    <style>
+    footer{
+    text-align: center;
+    padding: 3px;
+    background-color:cyan;
+    color: white;
+    }
+    </style>
+
+<style>
+#log
+  {
+    width: 100%;
+    display:table;
+     background-color:whitesmoke;
+     padding: 50px 20px 20px 50px;
+     text-align:left;
+     color:black;
+     font-family:sans-serif;
+
+  }
+  .centered
+  {
+    width:45%;
+    float:right;
+    text-align:right;
+  }
+  .centered 
+  {
+    width: 45%;
+    float:left;
+    text-align: left;
+  }
+  .centered 
+    h2{
+        color:red;
+        font-size:40px;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+ </style> 
+
+ <style>
+.row
+p{
+  font-size: 20px;
+  font-family: "poppins";
+  text-align: center;
+}
+h5
+{
+  font-size: 50px;
+  color: orangered;
+  font-family: "poppins";
+  text-align: center;
+}
+
+.row {
+    margin: 1px 20px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 5px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30%;
+    margin: 15px;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+ 
+  .content
+  {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.image 
+{
+  display:block;
+  width:100%;
+  height:100%;
+  padding: auto;
+}
+.overlay 
+{
+  position:absolute; 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .7s ease;
+  opacity:0;
+  font-family:sans-serif;
+  color:#FF0000;
+  font-size: 25px;
+  padding: 150px 10px 5px 5px;
+  text-align:left;
+}
+.content:hover 
+.overlay 
+{
+  opacity:1;
+}    
+                           
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  </style>
+  </head>
+
+<body>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+
+    <div id="title">
+    <div class="logo">
+    <img src="D:\Microsoft VS Code\assets\images\1.PNG" alt="Avatar">
+    <div>
+    <ul>
+        <li><a href="PROJECT.html" > <b> &nbsp;    HOME    </b>   </a></li>
+        <li><a  href="ABOUTPAGE.html"> <b>  &nbsp;   WORKS  </b></a></li> 
+        <li><a href="">  <b>  &nbsp;    SERVICES   </b></a></li>
+        <li><a  href="#"> <b> &nbsp;     ABOUT </b></a></li>
+        <li><a  href="CONTACTUS.HTML"> <b> &nbsp;    CONTACT</b> </a></li> 
+     </ul>
+    </div>
+    </div>  
+  </div>
+    <hr>
+    <div id="about">
+    <div class="con">
+        <p> <h1>  DURKESH TECHNOLOGIES  </h1>  </p>     
+    </div>    
+            
+              <div class="slideshow-container">
+              
+                <div class="mySlides fade">
+                <img src="D:\Microsoft VS Code\assets\images\5.JPG" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="D:\Microsoft VS Code\assets\images\it3.PNG" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="D:\Microsoft VS Code\assets\images\it2.JPG" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="D:\Microsoft VS Code\assets\images\it.JPG" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="D:\Microsoft VS Code\assets\images\it1.JPG" style="width:100%">
+              </div>
+            
+              <a class="prev" onclick="">❮</a>
+              <a class="next" onclick="">❯</a>
+
+            <br>
+
+            <div style="text-align:center">
+             <span class="dot" onclick=""></span>
+             <span class="dot" onclick=""></span> 
+             <span class="dot" onclick=""></span> 
+            <span class="dot" onclick=""></span> 
+             <span class="dot" onclick=""></span>
+            </div>
+            </div>
+             </div>
+
+             <div >
+              <br> <br>
+
+              <div id="paragraph">
+                <div class="para">
+                  <p> <b>DURKESH Technologies is a Branding & Website Design company in karur ,Coimbatore, Erode </b></p>
+          <hr>
+                       <b> <h4>    We love to give you our Creativity & Standardization in our work</h4></b>
+                  </div>
+              
+              <div class="para">
+                 <h6>DURKESH Technologies is specialized in building strong brands and driving measurable
+                   results through strategic marketing campaigns. With our unique blend of branding expertise and performance-driven
+                  tactics, we help businesses achieve their marketing goals while building a strong brand presence.
+                 <br><br>
+                 We provide website design, branding, digital marketing and application development services in erode, coimbatore.
+                  We offer a team of veteran developers, technical experts, and strategists who know the right questions to ask to
+                   get you on track with the right features,
+                  the perfect platform and the capacity to scale up your business.</h6>
+    </div>
+      
+  </div>
+  <br> <br> <br><br> <br> <br>
+</div>  
+         
+            
+    <div class="row">
+        <h5> Recent Creative Works</h5> <br><br> 
+        <p>Transforming Ideas, Dreams into tangible Captivating Realities,
+                        Bringing visions to life in the most extraordinary ways.</p>
+                        <br> <br>
+       </div>
+       
+       <div class="row">
+  
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> KKSK Website Design </div>
+            <img src="D:\Microsoft VS Code\assets\images\r1.PNG" style="width:100%" class="image">
+            
+      </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr>  PIM </div>
+          <img src="D:\Microsoft VS Code\assets\images\r2.PNG" style="width:100%" class="image">
+          </div>
+        </div>
+      
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr>Lesela </div>
+            <img src="D:\Microsoft VS Code\assets\images\r3.PNG"  style="width:100%" class="image">
+          </div>
+        </div>
+      
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> Homemax Soap</div>
+            <img src="D:\Microsoft VS Code\assets\images\r4.PNG"  style="width:100%" class="image">
+            </div>
+        </div>
+       
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> Samirdha Communication </div>
+            <img src="D:\Microsoft VS Code\assets\images\r5.JPG" style="width:100%" class="image">
+          </div>
+        </div>
+       
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr>TPN Hosptial </div>
+            <img src="D:\Microsoft VS Code\assets\images\r6.JPG"  style="width:100%" class="image">
+          </div>
+        </div>
+       
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> Oscar Clothing </div>
+            <img src="D:\Microsoft VS Code\assets\images\r7.JPG"  style="width:100%" class="image">
+           </div>
+        </div>
+       
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> PSR Caterers </div>
+            <img src="D:\Microsoft VS Code\assets\images\r8.JPG"  style="width:100%" class="image">
+          </div>
+        </div>
+       
+        <div class="column cars">
+          <div class="content">
+            <div class="overlay"> <hr> Fragrance Logo </div>
+            <img src="D:\Microsoft VS Code\assets\images\r9.PNG"  style="width:100%" class="image">
+        </div>
+        </div>
+      
+        <div class="column nature">
+          <div class="content">
+            <div class="overlay"> <hr> SDS Brochure </div>
+            <img src="D:\Microsoft VS Code\assets\images\r10.PNG"  style="width: 100%" class="image">
+            </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <div class="overlay"> <hr> Cebes Biriyani </div>
+            <img src="D:\Microsoft VS Code\assets\images\r11.PNG"  style="width: 100%" class="image">
+          </div>
+        </div>
+      
+       </div>
+
+
+    <div id="log">
+    <div class="centered">
+      <p> <b> We craft digital experiences that excite & inspire </b></p>
+           <b> <h2>    Let's Start Project</h2></b>
+      </div>
+  
+  <div class="centered">
+      <form>
+       <b> <label for="fname">Name :</label><br><br></b>
+       <input type="text" name="fname" id="fname" value="" minlength="8" required  style="border-color:black; border-radius: 3px; width:100%;"><br><br>
+        <b><label for="phone">Mobile no : </label><br><br></b>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{10}" placeholder="" value="+91 &nbsp;" style="border-color:black; border-radius: 3px; width:100%;"><br><br>
+        <b> <label for="emailid">Emial Id : </label><br><br></b>
+        <input type="text" name="emailid" id="emailid" value="" style="border-color:black; border-radius: 3px; width:100%;"><br><br> 
+        <input type="submit" value="SEND &rarr;" style="text-align:justify; background-color: black; color: white;">
+      </form>
+  </div>
+</div>
+
+
+<div class="col-container">
+  <div class="col" style="background:cyan">
+    <img src="D:\Microsoft VS Code\assets\images\dp.PNG" style="max-height:150px;">
+    <h3>DURKESH</h3>
+    <br>
+    <p><i class="fa fa-linkedin-square fa-lg">&nbsp;</i>
+        <i class="fa fa-github-square fa-lg">&nbsp;</i>
+        <i class="fa fa-whatsapp">&nbsp;</i>
+        <i class="fa fa-google-plus-square fa-lg">&nbsp;</i>
+        <i class="fa fa-twitter-square fa-lg">&nbsp;</i>
+        <i class="fa fa-facebook-square fa-lg">&nbsp;</i>
+        <i class="fa fa-instagram-sqare fa-lg">&nbsp;</i>
+        <i class="fa fa-youtube-play fa-lg">&nbsp;</i>
+    </p>
+</div>
+
+  <div class="col" style="background:cyan">
+   
+    <p>About</p>
+    <p>Services</p>
+    <p><a href="ABOUTPAGE.html"></a>Portfolio</p>
+    <p><a href="CONTACTUS.HTML"></a>Contact</p>
+      <p>Career</p>
+        <p>Blog</p>
+  </div>
+
+  <div class="col" style="background:cyan">
+    <p>Brand Design</p>
+    <p>Website Design</p>
+    <p>Digital Marketing</p>
+    <p>Application Development</p>
+  </div>
+  
+  <div class="col" style="background:cyan">
+   
+    <p>Logo Design</p>
+          <p> Identity Design</p>
+          <p>UX Strategy Desig</p>
+          <p>Website Designing</p>
+          <p> Creative Design</p>
+          <p>E-commerce</p> 
+  </div>
+    <div class="col" style="background:cyan">
+   
+    	 <p>Search Engine Optimization</p>
+    <p>Social Media Marketing</p>
+    <p>PPC Ad Campaign</p>
+    <p>Enterprise Application</p>
+    <p>Mobile Application</p>
+  </div>  
+  </div>
+    
+  <footer>
+    <b><p>Copyrights &#169; <a href=""> DURKESH TECHNOLOGIES</a> | <a href="" title="Terms And Condition">Terms And Condition</a> | <a href=""
+                      title="Privacy Policy">Privacy Policy</a></p></b>
+</footer>
+       
+       <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); 
+            }
+            </script>
+            <script>
+              filterSelection("all")
+              function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                  w3RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+              }
+              
+              function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+              }
+              
+              function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                  }
+                }
+                element.className = arr1.join(" ");
+              }
+              
+              </script>
+              
+       
+       
+</body>  
+</html>
